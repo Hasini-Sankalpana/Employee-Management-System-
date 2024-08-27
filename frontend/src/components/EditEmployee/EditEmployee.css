@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kalam:wght@300;400;700&family=Moderustic:wght@300..800&family=Permanent+Marker&family=Quicksand:wght@300..700&family=Reenie+Beanie&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.edit-employee {
+  padding: 30px;
+  width: 80%;
+  background-color: rgba(44, 44, 44, 0.4);
+  color: white;
+  border-radius: 15px; 
+  margin-top: 1%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  margin-left: 8%;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+.flex1,.flex2 {
+  display: flex;
+  flex-direction: column;
+}
+.edit-employee h1 {
+  font-family: "Moderustic", sans-serif;
+  text-align: center;
+  margin-top: -1%;
+  margin-bottom: 4%;
+}
+
+.edit-employee form {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-employee label {
+  margin-top: 7px;
+  margin-bottom: 4px;
+}
+
+.edit-employee input[type="text"],
+.edit-employee input[type="email"],
+.edit-employee input[type="number"],
+.edit-employee input[type="date"],
+.edit-employee select {
+  padding: 10px;
+  border-radius: 4px;
+  width: 100%; 
+ width: 400px; 
+}
+
+.edit-employee .skills-container {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  flex-wrap: wrap; 
+  gap: 5px;
+  
+}
+
+.edit-employee .skills-container label {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Space between checkbox and label text */
+}
+
+.edit-employee button {
+  padding: 10px;
+  background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: -50px;
+  font-size: 1rem;
+  width: 150px;
+  margin-left:950px ;
+}
+
+.edit-employee .error {
+  color: #ff0000;
+  margin-top: 10px;
+}
+
+.back-icon {
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  transition: color 0.3s ease;
+}
+
+.back-icon:hover {
+  color: #1e90ff; /* Change color on hover */
+}
+

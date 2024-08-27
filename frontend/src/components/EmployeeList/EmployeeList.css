@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kalam:wght@300;400;700&family=Moderustic:wght@300..800&family=Permanent+Marker&family=Quicksand:wght@300..700&family=Reenie+Beanie&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('C:/Users/DELl 5510/OneDrive/employee-management/frontend/src/assets/tattoback.jpg') no-repeat center center;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+}
+
+.employee-list h1 {
+  text-align: center;
+  font-family: "Moderustic", sans-serif;
+}
+
+.employee-list {
+  padding: 30px;
+  width: 100%;
+  max-width: 1200px; 
+  background-color: rgba(44, 44, 44, 0.4);
+  color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.btns {
+  display: flex;
+  flex-direction: row;
+  width: 450px;
+  margin-left: 32%;
+}
+
+.add-button, .view-reports-button {
+  display: block;
+  width: 150px;
+  margin: 20px auto; /* Centered horizontally */
+  padding: 15px;
+  background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+  color:black;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: "Moderustic", sans-serif;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+
+
+.add-button:hover ,.view-reports-button:hover {
+  transform: scale(1.05);
+}
+
+.filters {
+  display: flex;
+  flex-direction:row;
+  gap: 15px; 
+  padding: 20px;
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  width: 100%; 
+  max-width: 600px; 
+  margin: 20px auto; 
+}
+
+.filters input {
+  width: 100%; 
+  padding: 10px;
+  border: 1px solid #ddd; 
+  border-radius: 5px; 
+  font-size: 1rem;
+  background-color: #fff; 
+  color: #333; 
+  box-sizing: border-box; 
+  transition: border-color 0.3s; 
+}
+
+.filters select {
+  width: 30%; 
+  padding: 10px;
+  border: 1px solid #ddd; 
+  border-radius: 5px; 
+  font-size: 1rem;
+  background-color: #fff;
+  color: #333; 
+  box-sizing: border-box; 
+  transition: border-color 0.3s; 
+}
+
+.filters input:focus, .filters select:focus {
+  border-color: #1e90ff; /* Highlight border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+.filters input[type="number"] {
+  -moz-appearance: textfield; /* Remove spinner for number inputs in Firefox */
+}
+
+.filters input[type="number"]::-webkit-inner-spin-button, 
+.filters input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none; /* Remove spinner for number inputs in WebKit browsers */
+  margin: 0; /* Remove margin */
+}
+
+.filters select {
+  background-color: #fff; /* White background for select */
+}
+
+.filters option {
+  color: #333; /* Dark text color for options */
+}
+
+.filters input::placeholder, .filters select::placeholder {
+  color: #888; /* Placeholder text color */
+  font-style: italic; /* Italicize placeholder text */
+}
+
+.table-container {
+  height: 282px; 
+  overflow-y: auto;
+  margin-top: 20px; 
+  border-radius: 15px; 
+}
+
+.employee-list table {
+  width: 100%; /* Full width of the container */
+  background-color: rgba(255, 255, 255, 0.5);
+  border-collapse: collapse;
+  border-radius: 4px;
+  
+}
+
+.table-container::-webkit-scrollbar {
+  display: none;
+}
+
+.employee-list th,.employee-list td {
+  color: black;
+  border: 1px solid rgba(218, 215, 215, 0.5);
+  padding: 10px; /* Reduced padding for smaller row height */
+  text-align: center;
+  line-height: 1.2; /* Adjust line height for row height */
+}
+
+.employee-list th {
+  background-color:white;
+  font-size: 1.1rem;
+
+}
+
+.employee-list tr:nth-child(even) {
+  background-color: rgba(218, 215, 215, 0.5);
+}
+
+
+.employee-list thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.employee-list tfoot {
+  background-color: #222;
+}
+
+.employee-list tfoot td {
+  font-weight: bold;
+  text-align: right;
+  padding: 10px; /* Match padding with table cells */
+}
+
+.employee-list tfoot .total {
+  background-color: #1e90ff;
+  color: #fff;
+}
+
+.employee-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.logout-button {
+  position: fixed; /* Fix position relative to the viewport */
+  top: 10px; /* Distance from the top */
+  right: 10px; /* Distance from the right */
+  padding: 10px 20px;
+  background-color: #f44336; /* Red */
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000; /* Ensure it stays on top */
+}
+
+.logout-button:hover {
+  background-color: #d32f2f; /* Darker red on hover */
+}
+
