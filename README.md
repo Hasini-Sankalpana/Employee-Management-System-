@@ -8,7 +8,7 @@
     <header>
         <h1>Tattoo Shop Employee Management System</h1>
         <p>Excited to share that I have developed an Employee Management System tailored for tattoo shop operations. This web application streamlines employee record management, enabling efficient handling of employee data such as skills, salary, and roles. Built on the MERN stack, it provides robust functionalities for administrators to manage staff seamlessly.</p>
-         <img src="[img/logo.png](https://github.com/Hasini-Sankalpana/Employee-Management-System-/blob/main/frontend/src/assets/employee_management.png)" alt="Employee management homepage" style="max-width: 150px; display: block; margin: 0 auto;">
+         <img src="https://github.com/Hasini-Sankalpana/Employee-Management-System-/blob/main/frontend/src/assets/employee_management.png" alt="Employee management homepage" style="max-width: 150px; display: block; margin: 0 auto;">
     </header>
     <main>
         <section>
